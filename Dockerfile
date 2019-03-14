@@ -73,9 +73,6 @@ ENV DEBIAN_FRONTEND="teletype" \
 	TZ="Europe/Berlin" \
 	PACKAGES="nano" \
 	AVAHI="false"
-
-# Setting up EXPOSE for Admin
-EXPOSE 8081/tcp	
 	
 # Run startup-script
 CMD ["sh", "/opt/scripts/iobroker_startup.sh"]
