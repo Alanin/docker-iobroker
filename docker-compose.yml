@@ -6,6 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+      - ./transfer:/opt/transfer
     ports:
       - 9081:8081
       - 9082:8082
