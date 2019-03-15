@@ -27,7 +27,7 @@ then
 fi
 
 echo 'Starting dbus...'
-dbus-daemon --system
+/etc/init.d/dbus start
 
 echo 'Starting avahi-daemon...'
 /etc/init.d/avahi-daemon start
