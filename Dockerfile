@@ -72,7 +72,7 @@ ENV DEBIAN_FRONTEND="teletype" \
 	LANG="de_DE.UTF-8" \
 	TZ="Europe/Berlin" \
 	PACKAGES="nano" \
-	AVAHI="false"
+	AVAHI="true"
 	
 # Run startup-script
 CMD ["sh", "/opt/scripts/iobroker_startup.sh"]
