@@ -3,12 +3,6 @@
 # Reading env-variables
 packages=$PACKAGES
 avahi=$AVAHI
-
-#!/bin/bash
-
-# Reading env-variables
-packages=$PACKAGES
-avahi=$AVAHI
 dati=`date '+%Y-%m-%d %H:%M:%S'`
 
 # Information

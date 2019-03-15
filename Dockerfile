@@ -42,9 +42,13 @@ RUN mkdir -p /opt/scripts/ \
 WORKDIR /opt/scripts/
 COPY scripts/avahi_startup.sh avahi_startup.sh
 COPY scripts/iobroker_startup.sh iobroker_startup.sh
+COPY scripts/iobroker_restart.sh iobroker_restart.sh
+COPY scripts/iobroker_stop.sh iobroker_stop.sh
 COPY scripts/packages_install.sh packages_install.sh
 RUN chmod +x avahi_startup.sh \
     && chmod +x iobroker_startup.sh \
+    && chmod +x iobroker_restart.sh \
+    && chmod +x iobroker_stop.sh \
 	&& chmod +x packages_install.sh
 
 # Install ioBroker
